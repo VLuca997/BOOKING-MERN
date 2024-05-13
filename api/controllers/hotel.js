@@ -1,5 +1,6 @@
 import { createError } from '../utils/error.js';
 import Hotel from '../models/Hotel.js';
+import { query } from 'express';
 
 
 
@@ -48,6 +49,34 @@ export const getHotel = async (req, res, next) => {
 
 //SHOW ALL
 export const getHotels = async (req, res, next) => {
+    try {
+        const hotels = await Hotel.find();
+        res.status(200).json(hotels);
+    } catch (err) {
+        next(err);
+    }
+};
+
+//SHOW ALL BY CITY
+export const countByCity = async (req, res, next) => {
+
+    const cities = req.query.cities.split(",")
+    try {
+
+        const list = await Promise.all(cities.map(city=>{
+            return Hotel.countDocuments({city:city});// countDocuments mongodb Methods
+        }))
+
+        res.status(200).json(list);
+    } catch (err) {
+        next(err);
+    }
+};
+
+
+
+//SHOW ALL BY TYPE
+export const countByType = async (req, res, next) => {
     try {
         const hotels = await Hotel.find();
         res.status(200).json(hotels);

@@ -36,3 +36,9 @@ Install Node.js:
 
 - BCRYPT :  npm i bcryptjs
 - JWT :     npm i jsonwebtoken
+
+
+# REACT:
+npx create-react-app .
+npm i
+npm install react-bootstrap bootstrap
