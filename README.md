@@ -38,6 +38,19 @@ Install Node.js:
 - JWT :     npm i jsonwebtoken
 
 
+# API CHECK CON POSTMAN:
+- Routes:
+- POST: localhost:8800/api/auth/login
+- POST: localhost:8800/api/auth/register
+- POST: localhost:8800/api/rooms/ID-STANZA
+- POST: localhost:8800/api/hotels
+
+- GET: localhost:8800/api/hotels
+- GET: localhost:8800/api/hotels/ID-HOTEL
+- GET: localhost:8800/api/hotels/countByCity?cities=Rome,London
+- GET: localhost:8800/api/users/checkadmin/ID-USER-isAdmin
+- DELETE: localhost:8800/api/hotels/ID-HOTEL
+- DELETE: localhost:8800/api/rooms/ID-STANZA/ID-HOTEL?
 # REACT:
 npx create-react-app .
 npm i
