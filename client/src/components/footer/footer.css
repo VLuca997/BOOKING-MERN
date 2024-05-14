@@ -3,7 +3,12 @@
   padding: 0;
   margin: 0;
 }
-
+.bgColorFooterTop{
+  background-color: #00224F;
+}
+.bgColorFooterBottom{
+  background-color: #0057B8;
+}
 
 
 

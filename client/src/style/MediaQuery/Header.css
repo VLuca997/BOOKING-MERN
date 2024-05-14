@@ -1,0 +1,20 @@
+@media (max-width: 991.8px) {
+    .loginRegister {
+      justify-content: start!important;
+      margin: 0;
+      flex-direction: column!important;
+      padding: 0!important;
+      
+    }
+    .loginRegister .nav-link{
+        padding: 8px 0 8px 0 !important;
+
+    }
+    .loginRegister .nav-link a{
+        padding: 5px 5px!important;
+    }
+ 
+  }
+  
+  
+  

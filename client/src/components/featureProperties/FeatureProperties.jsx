@@ -8,6 +8,7 @@ export const FeatureProperties = () => {
         <div className='d-flex justify-content-evenly border border-3 py-2 '>
             {loading ? "Loading FeatureProperties...." :
                 <>
+                    <div>
                     {data.map(item => (<>
                         <div key={item._id}>
                             <div><img src={item.photos[0]} alt="photos" /></div>
@@ -22,6 +23,7 @@ export const FeatureProperties = () => {
                                     </div>
                         </>
                     ))}
+                    </div>
 
 
                 </>

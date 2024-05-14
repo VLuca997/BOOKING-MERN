@@ -1,0 +1,24 @@
+.element {
+    padding: 0 20px ;
+}
+
+.service-list > *{
+    text-decoration: none;
+}
+li{
+    
+    color: white;
+}
+
+.bgColorHeader{
+    background-color: #003B95;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+.headerBottom a {
+    color: #006CE4;
+
+}

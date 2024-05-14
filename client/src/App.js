@@ -13,7 +13,10 @@ function App() {
     return (
         <div className="App d-flex flex-column vh-100 justify-content-between">
             <BrowserRouter>
+            <div>
                 <NavbarBootstrap />
+
+            </div>
                 <div className='text-center'>
                     <Routes>
                         <Route path="/hotels" element={<List />} />
