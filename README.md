@@ -50,7 +50,11 @@ Install Node.js:
 - GET: localhost:8800/api/hotels/countByCity?cities=Rome,London
 - GET: localhost:8800/api/users/checkadmin/ID-USER-isAdmin
 - DELETE: localhost:8800/api/hotels/ID-HOTEL
-- DELETE: localhost:8800/api/rooms/ID-STANZA/ID-HOTEL?
+- DELETE: localhost:8800/api/rooms/ID-STANZA/ID-HOTEL
+
+
+
+
 # REACT:
 npx create-react-app .
 npm i
